@@ -1,0 +1,175 @@
+<html>
+<head>
+<title>Documentation</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+body {
+	margin: 10px 10%;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+h1, h2, h3 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+-->
+</style>
+</head>
+
+<body>
+<h1>blogMX Documentation</h1>
+<p>Basic Style Sheet is provided. Each additional stylesheet costs $ 2.0. When 
+you buy additional stylesheets the style changer is also provided. You can either 
+change the basic stylesheet to suit your requirement or you can buy additional 
+styles at <a href="http://www.dreamlettes.net/shop.asp">dreamlettes shop</a>. 
+</p>
+<h3>A. LICENSE AND AGREEMENT</h3>
+<p><a href="http://creativecommons.org/licenses/by/1.0/"><img alt="Creative Commons License" src="http://creativecommons.org/images/public/somerights.gif" /></a><br>
+blogMX from dreamlettes.net is a is licensed under a <a href="http://creativecommons.org/licenses/by/1.0/">Creative 
+Commons License</a> 
+<p>There is no support. Your question tough maybe posted in the forum at <a href="http://www.dreamlettes.net">http://www.dreamlettes.net</a> 
+replies to your queries will be however based on the authors time and availability.</p>
+<h3>B. INSTALLATION</h3>
+<p>1. Unzip the blogMX.zip file in to a directory on your server.</p>
+<p>2. Folders listing:</p>
+<p> <strong>a. cryptadmin:</strong> contains all admin pages. Do not make any 
+changes in the source codes of the files in this folder if you are not comfortable 
+with ASP. If you want to redesign or change the color/layout of the admin pages, 
+you should use an editor of your choice to do it (Dreamweaver MX or Dreamweaver 
+UltraDev 4 are preferred)</p>
+<p><strong>b. includes:</strong> contains all included files, viz:</p>
+<ul>
+<li>allscripts.js - required javascripts</li>
+<li>calendar.asp - includes the calendar in blog</li>
+<li>links.asp - includes links in blog</li>
+<li>logo.gif - logo for blog &gt; change this file as required</li>
+<li>menu.asp - the site navigation menu &gt; change this as required</li>
+<li>month.asp - includes month links in blog</li>
+<li>recent.asp - includes recent blogs in permalink file</li>
+<li>search.asp - includes search box in blog</li>
+<li><strong>uploaded_ images directory:</strong> this folder will contain any 
+uploaded images. It must have write permissions </li>
+</ul>
+<p><strong>c. Connections:</strong> this folder contains a file called dreamConn.asp; 
+read the '3. Connecting to the database:' below to learn more about this file.</p>
+<p><strong>d. Database:</strong> contains dbblogMX.mdb; read the '3. Connecting 
+to the database:' below to learn more about this file.</p>
+<p>e<strong>. DO NOT MAKE ANY CHANGES to the files unless you're comfortable with 
+coding in ASP</strong></p>
+<p>3. Connecting to the database:</p>
+<p>- blogMX.zip contains a folder named Connections. There is an ASP file in the 
+folder called dreamConn.asp</p>
+<p>- After you have placed all files and the database file into their directory, 
+open dreamConn.asp in UltraDev, Dreamweaver MX, Notepad, etc. Below are the codes 
+inside this file:</p>
+<p>- If you want to use DSN, create a DSN call dsnBlogMX and leave the dreamConn.asp 
+as it is</p>
+<p>- If you want to use DSNless:</p>
+<p>a. If you know the absolute path of directory where your files are:</p>
+<p>MM_dreamConn_STRING = &quot;Driver={Microsoft Access Driver (*.mdb)};DBQ=C:\InetPub\domain\database\dbblogMX.mdb</p>
+<p>OR</p>
+<p>MM_dreamConn_STRING = &quot;Driver={Microsoft Access Driver (*.mdb)};DBQ=C:\Sites\username\database\dbblogMX.mdb</p>
+<p>b. If you don't know the absolute path, use Server.Mappath:</p>
+<p>MM_dreamConn_STRING = &quot;DRIVER={Microsoft Access Driver (*.mdb)};DBQ=&quot;&amp; 
+Server.MapPath(&quot;database\dbblogMX.mdb&quot;)</p>
+<p>OR if your Hosting requires a username</p>
+<p>MM_dreamConn_STRING = &quot;DRIVER={Microsoft Access Driver (*.mdb)};DBQ=&quot;&amp; 
+Server.MapPath(&quot;username\database\dbblogMX.mdb&quot;)</p>
+<p>OR your Host requires your domain name:</p>
+<p>MM_dreamConn_STRING = &quot;DRIVER={Microsoft Access Driver (*.mdb)};DBQ=&quot;&amp; 
+Server.MapPath(&quot;domain\database\dbblogMX.mdb&quot;)</p>
+<p><strong>The database folder should have write permissions</strong></p>
+<h3>C. STYLES</h3>
+<p>- Open 3col.css file from folder CSS in Notepad.</p>
+<p>- Here's what in the file looks like ; read the comment</p>
+<p>div { /*all divs*/<br>
+border: none;<br>
+}<br>
+#header { /*header styles*/<br>
+margin-left: 10px;<br>
+color: #000;<br>
+border-bottom: 1px solid #333;<br>
+margin-top: 10px;<br>
+}<br>
+#nav { /*navigation styles*/<br>
+position: absolute;<br>
+left: 0;<br>
+width: 200px;<br>
+margin-left: 10px;<br>
+margin-top: 0px;<br>
+color: #000;<br>
+padding: 3px;<br>
+}<br>
+#arch { /*calendar column styles*/<br>
+position: absolute;<br>
+left: 75%;<br>
+top: 85px;<br>
+width: 200px;<br>
+z-index: 3;<br>
+color: #000;<br>
+padding: 3px 3px 3px 10px;<br>
+}<br>
+#nav p, #nav li, #arch p, #arch li, #arch td { /*calendar and navigation paragraphs, 
+lists and table cells styles*/<br>
+font-size: 11px;<br>
+}<br>
+#content { /*content styles*/<br>
+margin: 0px 30% 0 215px;<br>
+padding: 3px;<br>
+color: #000;<br>
+}<br>
+#footer { /*footer styles*/<br>
+clear: both;<br>
+width: 95%;<br>
+margin: 10px;<br>
+text-align: center;<br>
+font-family: Verdana;<br>
+font-size: 11px;<br>
+padding: 3px;<br>
+color: #000;<br>
+}<br>
+body { /*body styles*/<br>
+width: 97%;<br>
+}</p>
+<p>html, body { /*body styles*/<br>
+margin: 0;<br>
+padding: 0;<br>
+background-color: #fff;<br>
+color: #000;<br>
+}<br>
+p, a { /*font for paragraphs and links styles*/<br>
+font-family: Verdana;<br>
+}<br>
+h1, h2, h3, h4, h5, h6 { /*heading styles*/<br>
+font-family: Georgia;<br>
+margin-top: 0px;<br>
+}<br>
+.eachBlog { /*class style for each blog entry*/<br>
+margin: 10px;<br>
+border-top: 1px #333333;<br>
+border-right: 1px #333333;<br>
+border-bottom: 1px dashed #333333;<br>
+border-left: 1px #333333;<br>
+}<br>
+#header img { /*header image(logo) styles*/<br>
+border: none;<br>
+}#header h1 a {<br>
+color: #000000;<br>
+text-decoration: none;<br>
+}</p>
+<h3>D. SETUP BLOG</h3>
+<p>Login to blog Adminitration (http://localhost/blogMX/cryptadmin on localhost 
+or http://yourdomain.com/blogMX/cryptadmin on server)</p>
+<p>Login using username &quot;admin&quot; and password &quot;admin&quot;</p>
+<p>Click on change user link. Enter new username and password</p>
+<p>Click on blog Configuration. Make necessary changes</p>
+<p>You need CDO installed on your server for emailing comments to you.</p>
+<p>Include Calendar will include calendar in your blog</p>
+<p>Include Months will include month links to archive to your blog</p>
+<p>Include Category will include category select box to your blog</p>
+<p>Include Search will include search box to your blog</p>
+<p>Click Submit</p>
+<h4>Please direct queries at the <a href="http://www.dreamlettes.net/forum">dreamlettes 
+forum</a> for support</h4>
+<p>&nbsp;</p>
+</body>
+</html>

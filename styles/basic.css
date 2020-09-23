@@ -1,0 +1,81 @@
+div {
+	border: none;
+	}
+#header {
+	margin-left: 10px;
+	color: #000;
+	border-bottom: 1px solid #333;
+	margin-top: 10px;
+	}
+#nav {
+	position: absolute;
+	left: 0;
+	width: 200px;
+	margin-left: 10px;
+	margin-top: 0px;
+	color: #000;
+	padding: 3px;
+	}
+#arch {
+	position: absolute;
+	left: 75%;
+	top: 85px;
+	width: 200px;
+	z-index: 3;
+	color: #000;
+	padding: 3px 3px 3px 10px;
+	}
+#nav p, #nav li, #arch p, #arch li, #arch td {
+	font-size: 11px;
+	}
+#content {
+	margin: 0px 30% 0 215px;
+	padding: 3px;
+	color: #000;
+	}
+#footer {
+	clear: both;
+	width: 95%;
+	margin: 10px;
+	text-align: center;
+	font-family: Verdana;
+	font-size: 11px;
+	padding: 3px;
+	color: #000;
+	}
+body {
+	width: 97%;
+	}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+	color: #000;
+	}
+p, a {
+	font-family: Verdana;
+	}
+h1, h2, h3, h4, h5, h6 {
+	font-family: Georgia;
+	margin-top: 0px;
+	}
+
+.eachBlog {
+	margin: 10px;
+	border-top: 1px #333333;
+	border-right: 1px #333333;
+	border-bottom: 1px dashed #333333;
+	border-left: 1px #333333;
+}
+#header img {
+	border: none;
+	display: none;
+
+}#header h1 a {
+	color: #000000;
+	text-decoration: none;
+}
+fieldset {
+	border: none;
+}
