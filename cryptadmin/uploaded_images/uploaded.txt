@@ -1,0 +1,1 @@
+keep this folder for uploaded images. Make sure this directory has write permissions

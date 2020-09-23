@@ -1,0 +1,196 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	background: #FFFFFF;
+
+}
+#header {
+	background: #003266;
+	margin: 0px;
+	height: 82px;
+	padding-top: 30px;
+	padding-left: 15px;
+
+}
+#header img {
+	margin: 0px;
+	float: left;
+	border: none;
+	padding: 0px;
+
+
+}
+#header h1 a {
+	color: #ccccff;
+	text-decoration: none;
+	margin: 0px;
+	padding: 0px;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+
+
+}
+#arch {
+	position: absolute;
+	width: 200px;
+	left: 0px;
+	top: 103px;
+	padding-top: 30px;
+
+}
+#nav {
+	position: absolute;
+	width: 200px;
+	top: 103px;
+	right: 0px;
+	padding-top: 30px;
+
+}
+#content {
+	margin: 0px 215px;
+	font: 80% Verdana, Arial, Helvetica, sans-serif;
+	padding-top: 5px;
+
+
+}
+#footer {
+	margin-right: 215px;
+	margin-left: 215px;
+	font: 70% Verdana, Arial, Helvetica, sans-serif;
+
+}
+#arch h3 {
+	color: #666;
+	background: #EEE;
+	margin: 10px;
+	width: 180px;
+	font: bold small-caps 100% Verdana, Arial, Helvetica, sans-serif;
+	padding: 0px;
+	border: 1px solid #666666;
+	text-align: center;
+
+}
+#arch table {
+	font-size: 80%;
+	width: 175px;
+	margin: 5px 10px 10px;
+	border-top: 1px solid #666666;
+	border-right: 1px #666666;
+	border-bottom: 1px #666666;
+	border-left: 1px solid #666666;
+
+
+
+}
+#arch td {
+	color: #666666;
+	background: #eee;
+	text-align: center;
+	font: 80% Verdana, Arial, Helvetica, sans-serif;
+	margin: 1px;
+	padding: 2px;
+	border-top: 1px solid #CCCCCC;
+	border-right: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	border-left: 1px solid #CCCCCC;
+
+}
+#arch th {
+	color: #666666;
+	background: #CCCCCC;
+	text-align: center;
+	font: bold 90% Verdana, Arial, Helvetica, sans-serif;
+	margin: 1px;
+	padding: 2px;
+	border-top: 1px solid #CCCCCC;
+	border-right: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	border-left: 1px solid #CCCCCC;
+
+}
+#arch td a {
+	color: #333333;
+}
+#arch th a {
+
+	color: #333333;
+}
+#arch ul {
+	padding-left: 20px;
+	list-style: none;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font: 80% Verdana, Arial, Helvetica, sans-serif;
+
+
+
+}
+#arch li a {
+	color: #003266;
+}
+#arch li a:visited, #arch li a:hover, #arch li a:active {
+	color: #666666;
+}
+fieldset {
+
+	border: 1px solid #FFFFFF;
+}
+select, input {
+	margin-left: 20px;
+	font: 80% Verdana, Arial, Helvetica, sans-serif;
+	width: 120px;
+	border: 1px solid #333333;
+
+
+}
+.btn {
+	width: 30px;
+	margin: 0px;
+
+}
+#nav h2 {
+
+	color: #666;
+	background: #EEE;
+	margin: 10px;
+	width: 180px;
+	font: bold small-caps 100% Verdana, Arial, Helvetica, sans-serif;
+	padding: 0px;
+	border: 1px solid #666666;
+	text-align: center;
+}
+#nav ul {
+
+	padding-left: 20px;
+	list-style: none;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font: 80% Verdana, Arial, Helvetica, sans-serif;
+}
+#nav li a {
+
+	color: #003266;
+}
+#nav li a:visited, #nav li a:hover, #nav li a:active {
+	color: #666666;
+}
+#content h2 {
+	color: #666666;
+	background: #EEEEEE;
+	padding-left: 10px;
+	border: 1px solid #666666;
+	font-size: 120%;
+	font-weight: bold;
+	font-variant: small-caps;
+
+
+}
+#content h3 {
+	font-size: 100%;
+	color: #666666;
+}
+#content a {
+	color: #003266;
+}
+#footer a {
+	color: #000000;
+}
